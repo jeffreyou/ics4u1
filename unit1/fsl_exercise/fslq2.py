@@ -3,7 +3,9 @@
 
 rawText = input()
 
-if rawText[::-1] in rawText:
-    print(f"{rawText} is a palindrome")
-
-
+def palindromeCalculator(rawText):
+    if rawText[::-1] in rawText:
+        print(f"{rawText} is a palindrome")
+    else:
+        print(f"{rawText} is not a palindrome")
+palindromeCalculator(rawText)
